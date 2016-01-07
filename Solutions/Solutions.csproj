@@ -50,7 +50,9 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="TwoSum.cs" />
+    <Compile Include="Array\TwoSum.cs" />
+    <Compile Include="Definition\ListNode.cs" />
+    <Compile Include="LinkedList\SumTwoList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Choose>
