@@ -52,10 +52,13 @@
   <ItemGroup>
     <Compile Include="Array\TwoSum.cs" />
     <Compile Include="Definition\ListNode.cs" />
+    <Compile Include="Definition\TrieNode.cs" />
     <Compile Include="LinkedList\SumTwoList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="String\LongestSubstring.cs" />
+    <Compile Include="Trie\PrefixTree.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>
