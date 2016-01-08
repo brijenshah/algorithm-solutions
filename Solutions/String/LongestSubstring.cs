@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Solutions.String
@@ -25,7 +26,7 @@ namespace Solutions.String
                 char current = arr[i];
                 if (flag[current])
                 {
-                    result = Math.Max(result, i - start);
+                    result = System.Math.Max(result, i - start);
                     // the loop update the new start point
                     // and reset flag array
                     // for example, abccab, when it comes to 2nd c,
@@ -45,9 +46,34 @@ namespace Solutions.String
                 }
             }
 
-            result = Math.Max(arr.Length - start, result);
+            result = System.Math.Max(arr.Length - start, result);
 
             return result;
+        }
+
+        public static int LengthOfLongestSubstring2(string s)
+        {
+            if (s == null)
+                return 0;
+            char[] arr = s.ToCharArray();
+            int pre = 0;
+
+            IDictionary<char, int> map = new Dictionary<char, int>();
+
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (!map.ContainsKey(arr[i]))
+                {
+                    map.Add(arr[i], i);
+                }
+                else {
+                    pre = System.Math.Max(pre, map.Count);
+                    i = map[arr[i]];
+                    map.Clear();
+                }
+            }
+
+            return System.Math.Max(pre, map.Count);
         }
 
         [TestMethod]
@@ -60,6 +86,14 @@ namespace Solutions.String
 
             result = LengthOfLongestSubstring("bbbb");
             Assert.AreEqual(1, result);
+
+            // Approach 2
+            result = LengthOfLongestSubstring2("abcabcbb");
+            Assert.AreEqual(3, result);
+
+            result = LengthOfLongestSubstring2("bbbb");
+            Assert.AreEqual(1, result);
+
         }
     }
 }

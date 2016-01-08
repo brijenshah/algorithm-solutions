@@ -50,11 +50,18 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Array\ThreeSum.cs" />
     <Compile Include="Array\TwoSum.cs" />
     <Compile Include="Definition\ListNode.cs" />
     <Compile Include="Definition\TrieNode.cs" />
     <Compile Include="LinkedList\SumTwoList.cs" />
+    <Compile Include="Math\IntegerToRoman.cs" />
+    <Compile Include="Math\PalindromeNumber.cs" />
+    <Compile Include="Math\ReverseInteger.cs" />
+    <Compile Include="Math\StringToInteger.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="String\LongestCommonPrefix.cs" />
+    <Compile Include="String\LongestPalindromicString.cs" />
     <Compile Include="String\LongestSubstring.cs" />
     <Compile Include="Trie\PrefixTree.cs" />
   </ItemGroup>
