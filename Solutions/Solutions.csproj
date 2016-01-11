@@ -50,12 +50,23 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Array\ContainsDuplicate.cs" />
+    <Compile Include="Array\MajorityElement.cs" />
+    <Compile Include="Array\MoveZeroes.cs" />
     <Compile Include="Array\ThreeSum.cs" />
     <Compile Include="Array\TwoSum.cs" />
     <Compile Include="Definition\ListNode.cs" />
+    <Compile Include="Definition\TreeNode.cs" />
     <Compile Include="Definition\TrieNode.cs" />
+    <Compile Include="DynamicProgramming\ClimbingStairs.cs" />
+    <Compile Include="LinkedList\DeleteNode.cs" />
+    <Compile Include="LinkedList\RemoveDuplicates.cs" />
+    <Compile Include="LinkedList\Reverse.cs" />
     <Compile Include="LinkedList\SumTwoList.cs" />
+    <Compile Include="Math\AddDigits.cs" />
+    <Compile Include="Math\ExcelColumnNumber.cs" />
     <Compile Include="Math\IntegerToRoman.cs" />
+    <Compile Include="Math\NimGame.cs" />
     <Compile Include="Math\PalindromeNumber.cs" />
     <Compile Include="Math\ReverseInteger.cs" />
     <Compile Include="Math\StringToInteger.cs" />
@@ -63,6 +74,11 @@
     <Compile Include="String\LongestCommonPrefix.cs" />
     <Compile Include="String\LongestPalindromicString.cs" />
     <Compile Include="String\LongestSubstring.cs" />
+    <Compile Include="String\ValidAnagram.cs" />
+    <Compile Include="Tree\Invert.cs" />
+    <Compile Include="Tree\LowestCommonAncestor.cs" />
+    <Compile Include="Tree\MaximumDepth.cs" />
+    <Compile Include="Tree\SameTree.cs" />
     <Compile Include="Trie\PrefixTree.cs" />
   </ItemGroup>
   <ItemGroup />
