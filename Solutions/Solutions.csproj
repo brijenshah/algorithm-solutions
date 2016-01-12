@@ -54,6 +54,7 @@
     <Compile Include="Array\MajorityElement.cs" />
     <Compile Include="Array\MoveZeroes.cs" />
     <Compile Include="Array\ThreeSum.cs" />
+    <Compile Include="Array\ThreeSumClosest.cs" />
     <Compile Include="Array\TwoSum.cs" />
     <Compile Include="Definition\ListNode.cs" />
     <Compile Include="Definition\TreeNode.cs" />

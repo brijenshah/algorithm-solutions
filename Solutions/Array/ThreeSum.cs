@@ -7,7 +7,8 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Solutions.Array
 {
-    //Given an array S of n integers, are there elements a, b, c in S such that a + b + c = 0? Find all unique triplets in the array which gives the sum of zero.
+    //Given an array S of n integers, are there elements a, b, c in S such that a + b + c = 0? 
+    // Find all unique triplets in the array which gives the sum of zero.
     // Note:
     //      Elements in a triplet(a, b, c) must be in non-descending order. (ie, a ≤ b ≤ c)
     //      The solution set must not contain duplicate triplets.
@@ -24,7 +25,7 @@ namespace Solutions.Array
             System.Array.Sort(num);
 
             IList<IList<int>> result = new List<IList<int>>();
-            IList<int> each = new List<int>();
+            
             for (int i = 0; i < num.Length; i++)
             {
                 if (num[i] > 0) break;
@@ -37,12 +38,11 @@ namespace Solutions.Array
                     {
                         if (num[i] + num[j] + num[k] == 0)
                         {
-
+                            IList<int> each = new List<int>();
                             each.Add(num[i]);
                             each.Add(num[j]);
                             each.Add(num[k]);
                             result.Add(each);
-                            each.Clear();
                         }
                     }
                 }
@@ -56,14 +56,14 @@ namespace Solutions.Array
         public void Three_Sum()
         {
             IList<IList<int>> result = GetThreeSum(new[] {-1, 0, 1, 2, - 1, -4});
-
+            
             Assert.AreEqual(result[0][0], -1);
-            Assert.AreEqual(result[0][1], 0);
-            Assert.AreEqual(result[0][2], 1);
+            Assert.AreEqual(result[0][1], -1);
+            Assert.AreEqual(result[0][2], 2);
 
             Assert.AreEqual(result[1][0], -1);
-            Assert.AreEqual(result[1][1], -1);
-            Assert.AreEqual(result[1][2], -2);
+            Assert.AreEqual(result[1][1], 0);
+            Assert.AreEqual(result[1][2], 1);
         }
     }
 }
