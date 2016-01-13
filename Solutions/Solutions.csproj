@@ -53,14 +53,17 @@
     <Compile Include="Array\ContainsDuplicate.cs" />
     <Compile Include="Array\MajorityElement.cs" />
     <Compile Include="Array\MoveZeroes.cs" />
+    <Compile Include="Array\ReverseString.cs" />
     <Compile Include="Array\ThreeSum.cs" />
     <Compile Include="Array\ThreeSumClosest.cs" />
     <Compile Include="Array\TwoSum.cs" />
+    <Compile Include="Array\UniqueChar.cs" />
     <Compile Include="Definition\ListNode.cs" />
     <Compile Include="Definition\TreeNode.cs" />
     <Compile Include="Definition\TrieNode.cs" />
     <Compile Include="DynamicProgramming\ClimbingStairs.cs" />
     <Compile Include="LinkedList\DeleteNode.cs" />
+    <Compile Include="LinkedList\Partition.cs" />
     <Compile Include="LinkedList\RemoveDuplicates.cs" />
     <Compile Include="LinkedList\Reverse.cs" />
     <Compile Include="LinkedList\SumTwoList.cs" />
@@ -80,6 +83,7 @@
     <Compile Include="Tree\LowestCommonAncestor.cs" />
     <Compile Include="Tree\MaximumDepth.cs" />
     <Compile Include="Tree\SameTree.cs" />
+    <Compile Include="Tree\Traversals.cs" />
     <Compile Include="Trie\PrefixTree.cs" />
   </ItemGroup>
   <ItemGroup />
