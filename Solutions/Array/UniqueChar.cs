@@ -13,12 +13,12 @@ namespace Solutions.Array
             {
                 return false;
             }
-            bool[] char_set = new bool[128];
+            bool[] charSet = new bool[128];
             for (int i = 0; i < str.Length; i++)
             {
-                int val = (int)str[i];
-                if (char_set[val]) return false;
-                char_set[val] = true;
+                int val = str[i];
+                if (charSet[val]) return false;
+                charSet[val] = true;
             }
             return true;
         }
