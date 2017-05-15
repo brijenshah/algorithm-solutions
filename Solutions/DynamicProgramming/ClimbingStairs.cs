@@ -30,6 +30,16 @@ namespace Solutions.DynamicProgramming
             return b;
         }
 
+        public int FibonacciRecursive(int n)
+        {
+            if ((n == 0) || (n == 1))
+            {
+                return n;
+            }
+
+            return FibonacciRecursive(n - 1) + FibonacciRecursive(n - 2);
+        }
+
         [TestMethod]
         [TestCategory("DynamicProgramming")]
         public void Climbing_Stairs()
