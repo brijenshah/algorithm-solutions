@@ -63,6 +63,7 @@
     <Compile Include="Definition\TrieNode.cs" />
     <Compile Include="DynamicProgramming\ClimbingStairs.cs" />
     <Compile Include="DynamicProgramming\Fibonacci.cs" />
+    <Compile Include="DynamicProgramming\TicTacToe.cs" />
     <Compile Include="LinkedList\DeleteNode.cs" />
     <Compile Include="LinkedList\LRUCache.cs" />
     <Compile Include="LinkedList\Partition.cs" />

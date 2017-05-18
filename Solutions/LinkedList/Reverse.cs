@@ -9,20 +9,26 @@ namespace Solutions.LinkedList
     {
         public ListNode ReverseList(ListNode head)
         {
-
             ListNode prev = null;
-            ListNode curr = null;
-            ListNode next = head;
+            ListNode curr = head;
 
-            while (next != null)
+            while (curr != null)
             {
-                curr = next;
-                next = curr.Next;
+                ListNode nextTemp = curr.Next;
                 curr.Next = prev;
                 prev = curr;
+                curr = nextTemp;
             }
+            return prev;
+        }
 
-            return curr;
+        public ListNode ReverseList2(ListNode head)
+        {
+            if (head == null || head.Next == null) return head;
+            ListNode p = ReverseList2(head.Next);
+            head.Next.Next = head;
+            head.Next = null;
+            return p;
         }
 
         [TestMethod]
@@ -33,7 +39,7 @@ namespace Solutions.LinkedList
             list.Next = new ListNode(2);
             list.Next.Next = new ListNode(3);
 
-            ListNode result = ReverseList(list);
+            ListNode result = ReverseList2(list);
 
             Assert.AreEqual(result.Data, 3 );
             Assert.AreEqual(result.Next.Data, 2);
